@@ -1,0 +1,323 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway', sans-serif;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+/* VARIABLE */
+:root{
+    --colorBleuFonce: #0065FC;
+    --colorBleuClair:  #DEEBFF;
+    --colorGris: #F2F2F2;
+    --widthSvg: 1rem;
+    --borderMenu: 1px solid black;
+    --radius: 20px;
+
+}
+/* -------------- */
+
+/* REGLAGE SVG */
+span svg{
+    width: 1.3em;
+}
+label svg{
+    width: 0.8em;
+}
+li a svg{
+    width: var(--widthSvg);
+}
+/* --------------- */
+
+/* WIDTH PAGE */
+div.corpDePage{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    line-height: 1.5;
+    height: 100vh;
+    width: 95%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ---------------- */
+ul{
+    list-style-type: none;
+}
+/* menuHEADER */
+.h1Search{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.pSearch{
+    font-size: 0.9em;
+}
+nav{
+    height: 100px;
+}
+.menuHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuNav{
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+}
+.menuNav li a:hover{
+    color: var(--colorBleuFonce);
+    border-top: 2px solid var(--colorBleuFonce);
+}
+
+/* ----------------- */
+/* SECTION SEARCH */
+input{
+    border: none;
+    font-weight: bold;
+    width: 200px;
+    padding-left: 20px;
+}
+.searchVille{
+    border: 1px solid var(--colorGris);
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    height: 45px;
+    width: max-content;
+    overflow: hidden;
+}
+.villeSubmit{
+    background-color: var(--colorBleuFonce);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: 120px;
+}
+.villeSubmit span{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.searchVille label{
+    background-color: var(--colorGris);
+    /* align-items: center;
+    justify-content: center; */
+    width: 45px;
+    height: 45px;
+}
+.findSvg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------- */
+/* SECTION FILTRE */
+.filtres{
+    display: flex;
+    gap: 2em;
+    line-height: 45px;
+    margin: 40px 0;
+}
+.filtres .btnFlex{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid var(--colorGris);
+}
+button span.btnImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    background-color: var(--colorBleuClair);
+    width: 45px;
+    height: 45px;
+}
+.txtFiltre{
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* ----------------- */
+
+/* SECTION HEBERGEMENTS */
+
+.hebergements{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    gap: 2em;
+    
+}
+.cardEffet{
+    transition: transform 300ms ease-in-out;
+    box-shadow: 0px 6px 6px rgb(191, 183, 183);
+    border-radius: 20px;
+    margin: 15px 0;
+}
+.cardEffet:hover{
+    transform: scale(1.05);
+}
+.marseille{
+    border-radius: var(--radius);
+    background-color: var(--colorGris);
+    /* width: 880px; */
+    gap: 1.5em;
+    padding: 1.5em 1.5em 0 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 30px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.marseille .titleHost{  
+    display: grid;
+    align-items: flex-end;
+    grid-column-start: 1;
+}
+.cardHost1{
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-row: 2 / 3;
+    
+}
+.cardHost2{
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row: 2 / 3;
+}
+.cardHost3{
+    display: grid;
+    align-items: center;
+    grid-column-start: 3;
+    grid-row: 2 / 3;
+}
+.cardHost4{
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.cardHost5{
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.cardHost6{
+    display: grid;
+    align-items: center;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.txtCard{
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 10px 0 10px;
+    /* margin-top: -35px; */
+}
+.txtCard h6{
+    font-size: 1.1em;
+}
+.txtCard p{
+    font-size: 0.8em;
+}
+.showMore{
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    align-items: center;
+}
+.starList{
+    display: flex;
+}
+
+/* ASIDE POPULAIRE */
+
+.populaire{
+    border-radius: var(--radius);
+    background-color: var(--colorGris);
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    /* width: 420px; */
+    height: 625px;
+}
+.populaire .titlePop{
+    display: grid;
+    grid-column-start: 2;
+    align-content: flex-end;
+}
+.cardPop1{
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.cardPop2{
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.cardPop3{
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+/* --------------------- */
+
+/* REGLAGE IMAGES */
+
+.imgHeberge img{
+    vertical-align: middle;
+    border-style: none;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 5px solid white;
+    height: 120px;
+    width: 245px;
+}
+.imgPop img{
+    border-radius: var(--radius);
+    height: 130px;
+    width: 300px;
+}
+
+/* ----------------- */
+
+/* FOOTER */
+footer{
+    display: flex;
+    margin-top: 200px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+footer{
+    /* width: 100vw; */
+    background-color: var(--colorGris);
+}
+/* --------------- */
