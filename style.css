@@ -630,15 +630,26 @@ div.card-pop{
   display: flex;
 }
 /* -----------------------ACTIVITES------------------------ */
-
+div.cart2 img{
+  height: 100%;
+}
+div.cart3 img{
+  height: 100%;
+}
+div.cart5 img{
+  height: 100%;
+}
+div.cart6 img{
+  height: 100%;
+}
 .carte img{
   object-fit: cover;
-  height: 200px;
+  height: 400px;
   width: 200px;
   border-radius: var(--radius);
 }
 .activite-flex{
-  border: var(--borderMenu);
+  /* border: var(--borderMenu); */
   width: 100%;
   height: max-content;
   display: flex;
@@ -646,7 +657,8 @@ div.card-pop{
   flex-wrap: wrap;
   gap: 3%;
 }
-.cart1 a{
-
-  color: red;
+div.acti-image{
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
 }
