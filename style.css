@@ -621,72 +621,83 @@ div.card-pop{
 .card-pop:hover{
   transform: scale(1.05);
 }
+.card-pop .card-stars {
+/* -------------------------------------------ETOILE A METTRE EN FLEX END ?????---------------------------- */
+  /* align-items: flex-end; */
+  flex-grow: 1;                             
+  /* padding-top: 25%; */
+}
+
 .card-pop .card-stars ul{
-  display: flex;
-  padding-top: 25%;
+  align-self: flex-end;
 }
 /* ---------------------- */
 .starList{
   display: flex;
+  align-items: flex-end;
 }
 /* -----------------------ACTIVITES------------------------ */
-div.cart2 img{
-  height: 80%;
-}
-div.cart3 img{
-  height: 100%;
-}
-div.cart5 img{
-  height: 100%;
-}
-div.cart6 img{
-  height: 100%;
-}
-.carte{
-  /* display: flex; */
-  box-shadow: 0px 6px 9px gray;
-  border-radius: var(--radius);
-  overflow: hidden;
-  /* height: 100%; */
-  /*  */
-  /* height: max-content; */
-  border: 3px black solid;
-}
-.carte a{
+.activite-flex{
   display: flex;
-  flex-direction: column;
+  gap: 4%;
 }
-.carte .acti-txt{
-  /* width: 100%; */
-
-  height: 50px;
-  line-height: 50px;
-  background-color: white;
-  margin-left: 15px;
-}
-.carte img{
+.card-acti img{
+  width: 250px;
+  height: 150px;
+  margin-top: 15px;
   object-fit: cover;
-  height: 350px;
-  width: 200px;
+  overflow: hidden;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  
+  box-shadow: 0px 0px 6px rgb(99, 96, 96);
 }
-.titleActi{
-  margin: 30px 0;
+img.img-seule{
+  height: 330px;
+  max-width: 100%;
+  overflow: hidden;
 }
-.activite-flex{
-  margin: 45px 0 30px 0;
-  /* border: var(--borderMenu); */
-  width: 100%;
-  height: max-content;
+/* FIN PLACEMENT FLEX */
+.card-title-acti{
+  padding: 15px 0 15px 15px;
+  height: 50px;
+  margin-top: -10px;
+  font-size: 10px;
+  box-shadow: 0px 0px 6px rgb(99, 96, 96);
+  background-color: #fff;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+/* HAUTEUR DIV GROUPE */
+.groupe>.card-acti:nth-child(2) .card-image-acti{
+  height: 140px;
+  overflow: hidden;
+}
+.groupe2>.card-acti:nth-child(1) .card-image-acti{
+  height: 140px;
+  overflow: hidden;
+}
+/* HOVER---------------- */
+.card-acti{
+  transition: 300ms ease-in-out;
+}
+.card-acti:hover{
+  transform: scale(1.05);
+}
+/* -------------------------------------------------------------------- */
+footer{
+  font-size: 14px;
+  margin-top: 50px;
+  background-color: var(--colorGris);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 3%;
+  justify-content: space-around;
+  gap: 15%;
+  align-items: center;
 }
-div.acti-image{
-  object-fit: cover;
-  height: 200px;
-  width: 200px;
+footer>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer a,h4{
+  padding: 10px;
 }
