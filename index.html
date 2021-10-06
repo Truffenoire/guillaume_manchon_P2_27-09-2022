@@ -94,9 +94,11 @@
         </section>
 
         <!-- -------------------------------------------------------------- -->
+        <section class="reponse-recherche"><span class="reponse-svg"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info" class="svg-inline--fa fa-info fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="#0065FC" d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg></span>
+        <span class="reponse-txt">Plus de 500 logements sont disponibles dans cette ville</span>
+        </section>
 
         <section class="hebergements">
-
 
             <aside class="marseille">
 
@@ -432,7 +434,7 @@
 
             <aside class="populaire">
 
-                <h3 class="titlePop">Les plus populaires</h3>
+                <h3 class="titlePop">Les plus populaires<span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-line" class="svg-inline--fa fa-chart-line fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path></svg></span></h3>
 
                 <div class="responsive-pop">
 
@@ -449,7 +451,7 @@
                                     <p>Nuit à partir de 128€</p>
                                 </div>
                                 <div class="card-stars">
-                                    <ul class="starList">
+                                    <ul class="starList starList-pop">
                                         <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas"
                                                     data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -504,7 +506,7 @@
                                     <p>Nuit à partir de 71€</p>
                                 </div>
                                 <div class="card-stars">
-                                    <ul class="starList">
+                                    <ul class="starList starList-pop star-list-bug">
                                         <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas"
                                                     data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img"
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -558,7 +560,7 @@
                                 <p>Nuit à partir de 68€</p>
                             </div>
                             <div class="card-stars">
-                                <ul class="starList">
+                                <ul class="starList starList-pop">
                                     <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas"
                                                 data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img"
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -602,121 +604,123 @@
                 </div>
 
     
-    </aside>
+            </aside>
 
-    </section>
+            </section>
 
-<!-- --------------------------SECTION ACTIVITES--------------------------- -->
+        <!-- --------------------------SECTION ACTIVITES--------------------------- -->
 
-    <section class="titleActi">
-        <h3 id="activite">Activités à Marseille</h3>
-    </section>
+            <section class="titleActi">
+                <h3 id="activite">Activités à Marseille</h3>
+            </section>
 
-    <section class="activites">
+            <section class="activites">
 
-        <div class="activite-flex">
-                    <!-- ---------------------------------------------------------- -->
-                    <div class="card-acti carte1">
-                        <a href="#">
-                            <div class="card-image-acti"><img class="img-seule" src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" /></div>
-                    
-                            <div class="card-body-acti">
-                                <div class="card-title-acti">
-                                    <h3>Vieux Port</h3>
-                                </div>
+                <div class="activite-flex">
+                            <!-- ---------------------------------------------------------- -->
+                            <div class="card-acti carte1">
+                                <a href="#">
+                                    
+                                        <div class="card-image-acti"><img class="img-seule" src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" /></div>
+                                
+                                        <div class="card-body-acti">
+                                            <div class="card-title-acti">
+                                                <h3>Vieux Port</h3>
+                                            </div>          
+                                        </div>
+                                    
+                                </a>
                             </div>
-                        </a>
-                    </div>
-        
-                        <div class="groupe">
+                
+                                <div class="groupe">
+                                    <div class="card-acti">
+                                        <a href="#">
+                                            <div class="card-image-acti"><img class="image-double" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" /></div>
+                                    
+                                            <div class="card-body-acti">
+                                                <div class="card-title-acti">
+                                                    <h3>Fort de Pomègues</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                
+                                    <div class="card-acti">
+                                        <a href="#">
+                                            <div class="card-image-acti"><img class="image-double" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" /></div>
+                                    
+                                            <div class="card-body-acti">
+                                                <div class="card-title-acti">
+                                                    <h3>Îles du Frioul</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                
                             <div class="card-acti">
                                 <a href="#">
-                                    <div class="card-image-acti"><img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" /></div>
+                                    <div class="card-image-acti"><img class="img-seule" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" /></div>
                             
                                     <div class="card-body-acti">
                                         <div class="card-title-acti">
-                                            <h3>Fort de Pomègues</h3>
+                                            <h3>Parc National des Calanques</h3>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-        
-                            <div class="card-acti">
-                                <a href="#">
-                                    <div class="card-image-acti"><img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" /></div>
-                            
-                                    <div class="card-body-acti">
-                                        <div class="card-title-acti">
-                                            <h3>Îles du Frioul</h3>
-                                        </div>
+                
+                                <div class="groupe2">
+                                    <div class="card-acti">
+                                        <a href="#">
+                                            
+                                            <div class="card-image-acti"><img class="image-double" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" /></div>                                
+                                            <div class="card-body-acti">
+                                                
+                                                <div class="card-title-acti">
+                                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-        
-                    <div class="card-acti">
-                        <a href="#">
-                            <div class="card-image-acti"><img class="img-seule" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" /></div>
-                    
-                            <div class="card-body-acti">
-                                <div class="card-title-acti">
-                                    <h3>Parc National des Calanques</h3>
+                
+                                    <div class="card-acti">
+                                        <a href="#">               
+                                            <div class="card-image-acti"><img class="image-double" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" /></div>                   
+                                            <div class="card-body-acti">
+                                                <div class="card-title-acti">
+                                                    <h3>Parc Longchamp</h3>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-        
-                        <div class="groupe2">
-                            <div class="card-acti">
-                                <a href="#">
-                                    
-                                    <div class="card-image-acti"><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" /></div>                                
-                                    <div class="card-body-acti">
-                                        
-                                        <div class="card-title-acti">
-                                            <h3>Notre-Dame-de-la-Garde</h3>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                            </div>
-        
-                            <div class="card-acti">
-                                <a href="#">               
-                                    <div class="card-image-acti"><img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" /></div>                   
-                                    <div class="card-body-acti">
-                                        <div class="card-title-acti">
-                                            <h3>Parc Longchamp</h3>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                            </div>
-                        </div>
 
                     <!-- ---------------------------------------------------------- -->
         </div>
 
-    </section>
-</div>
+        </section>
+    </div>
     <footer>
-        <div>
-            <h4>A propos</h4>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales de vente</a>
-            <a href="#">Données et confidentialité</a>
-        </div>
-        <div>
-            <h4>Nos hébergements</h4>
-            <a href="#">Charte de qualité</a>
-            <a href="#">Soumettre votre hôtel</a>
-
-        </div>
-        <div>
-            <h4>Assistance</h4>
-            <a href="#">Centre d'aide</a>
-            <a href="#">Nous contacter</a>
-
+        <div class="footer">
+            <div class="footer-nav">
+                <h4>A propos</h4>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div class="footer-nav">
+                <h4>Nos hébergements</h4>
+                <a href="#">Charte de qualité</a>
+                <a href="#">Soumettre votre hôtel</a>
+            </div>
+            <div class="footer-nav">
+                <h4>Assistance</h4>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </div>
         </div>
 
     </footer>

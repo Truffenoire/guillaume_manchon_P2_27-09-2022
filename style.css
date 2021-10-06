@@ -357,7 +357,7 @@
     --colorBleuClair:  #DEEBFF;
     --colorGris: #F2F2F2;
     --widthSvg: 16px;
-    --borderMenu: 1px solid black;
+    --borderMenu: 2px solid #F2F2F2;
     --radius: 20px;
 
 }
@@ -502,10 +502,29 @@ button span.btnImg{
 }
 .txtFiltre{
     padding: 0 15px;
+    overflow: hidden;
     font-weight: bold;
+}
+.btnFlex:hover{
+    transition: 0.5s;
+    background-color: var(--colorBleuClair);
 }
 
 /* ----------------- */
+
+/* REPONSE RECHERCHE_________________ */
+.reponse-recherche{
+font-size: 12px;
+}
+.reponse-svg svg{
+height: 15px;
+padding: 1px;
+/* align-items: center; */
+border: var(--borderMenu);
+border-radius: 1000px;
+}
+
+/* ---------------------------------- */
 /* SECTION HEBERGEMENTS */
 .hebergements{
     display: flex;
@@ -527,7 +546,11 @@ button span.btnImg{
   padding: 30px 0 0 25px;
 }
 .marseille .showMore{
+  font-weight: bold;
   padding: 25px 0 30px 25px;
+}
+.marseille .showMore:hover{
+  color: #0065FC;
 }
 .responsive{
     display: flex;
@@ -551,7 +574,7 @@ button span.btnImg{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2%;
+  /* margin-top: 15%; */
 }
 
 /* ------------------------------- */
@@ -565,6 +588,7 @@ button span.btnImg{
   width: 170px;
   margin: 15px;
   border: 3px solid white;
+  box-shadow: 0px 0px 6px var(--colorGris);
   border-radius: var(--radius);
   overflow: hidden;
   transition: 300ms ease-in-out;
@@ -575,7 +599,7 @@ button span.btnImg{
   margin-top: -7px;
 }
 .card-date{
-  font-size: 16px;
+  font-size: 17px;
 }
 .card-title{
   font-size: 12px;
@@ -593,7 +617,7 @@ button span.btnImg{
 }
 div.card-pop{
   display: flex;
-  height: 100px;
+  height: 120px;
   width: 250px;
   margin: 15px;
   border: 3px solid white;
@@ -627,16 +651,29 @@ div.card-pop{
   flex-grow: 1;                             
   /* padding-top: 25%; */
 }
-
-.card-pop .card-stars ul{
-  align-self: flex-end;
+/* ---------------------------------------------------------------------------------------- */
+.titlePop{
+  display: flex;
+  justify-content: space-between;
 }
-/* ---------------------- */
+.titlePop>span{
+  padding-right: 35px;
+}
+.reponse-recherche{
+  display: flex;
+  gap: 1%;
+  margin-bottom: 30px;
+}
 .starList{
   display: flex;
   align-items: flex-end;
 }
 /* -----------------------ACTIVITES------------------------ */
+#activite{
+  font-size: 15px;
+  font-weight: 900;
+  margin: 45px 0 0px 0;
+}
 .activite-flex{
   display: flex;
   gap: 4%;
@@ -646,36 +683,57 @@ div.card-pop{
   height: 150px;
   margin-top: 15px;
   object-fit: cover;
+  vertical-align: bottom;
   overflow: hidden;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  box-shadow: 0px 0px 6px rgb(99, 96, 96);
+  /* box-shadow: 0px 0px 3px rgb(170, 167, 167); */
 }
+
 img.img-seule{
-  height: 330px;
+  max-height: 100%;
+  height: 300px;
   max-width: 100%;
   overflow: hidden;
 }
 /* FIN PLACEMENT FLEX */
 .card-title-acti{
-  padding: 15px 0 15px 15px;
+  padding: 20px 0 15px 15px;
   height: 50px;
   margin-top: -10px;
   font-size: 10px;
-  box-shadow: 0px 0px 6px rgb(99, 96, 96);
+  box-shadow: 0px 0px 6px rgb(194, 194, 194);
   background-color: #fff;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
 /* HAUTEUR DIV GROUPE */
 .groupe>.card-acti:nth-child(2) .card-image-acti{
-  height: 140px;
+  height: 110px;
   overflow: hidden;
 }
 .groupe2>.card-acti:nth-child(1) .card-image-acti{
-  height: 140px;
+  height: 125px;
+  overflow: hidden;
+  object-position: 50% 70%;
+}
+.groupe2>.card-acti:nth-child(2) .card-image-acti{
+  height: 127px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+}
+/* ----------------------------IMAGE LARGEUR----------------------- */
+
+img.image-double{
+  max-height: 100%;
+  max-width: 100%;
+  object-position: 50% 30%;
   overflow: hidden;
 }
+
+/* ---------------------------------------------------------------- */
 /* HOVER---------------- */
 .card-acti{
   transition: 300ms ease-in-out;
@@ -685,19 +743,142 @@ img.img-seule{
 }
 /* -------------------------------------------------------------------- */
 footer{
+  background-color: var(--colorGris);
+}
+.footer{
+  margin: auto;
+  width: 992px;
   font-size: 14px;
   margin-top: 50px;
   background-color: var(--colorGris);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 15%;
-  align-items: center;
+  padding-bottom: 20px;
+
 }
-footer>div{
+.footer-nav{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+.footer-nav a:hover{
+  color: var(--colorBleuFonce);
 }
 footer a,h4{
   padding: 10px;
 }
+
+/* --------------------------------------------------------MEDIA QUERIES-------------------------------------------------------- */
+
+/* -----------PHONE----------- */
+
+/* NAV--------------- */
+@media (max-width: 400px){
+  /* footer{
+    display: none;
+  } */
+  .menuHeader{
+    display: flex;
+    flex-direction: column;
+  }
+  .search{
+    text-align: center;
+  }
+  .menuNav{
+    justify-content: space-around;
+    width: 100%;
+  }
+  .menuNav li a:hover{
+    color: var(--colorBleuFonce);
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--colorBleuFonce);
+    border-top: none;
+}
+/* -----------------------------------------------FIN NAV------------------------------ */
+/* ----------------FILTRE---------------------------------- */
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+/* HEBERGEMENT PHONE---------------------------------------------------------- */
+.hebergements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: max-content; */
+}
+/* ASIDE MARSEILLE---------------------------------- */
+.marseille{
+  background-color: white;
+  width: 100%;
+  order: 2;
+}
+.card{
+  max-height: 100%;
+  width: 350px;
+}
+.card img{
+  width: 350px;
+}
+.card-body h6, p{
+  font-size: 12px;
+}
+.showMore{
+  margin-top: 100px;
+  font-weight: bold;
+}
+/* ASIDE POPULAIRE-------------------------------- */
+.populaire{
+  order: 1;
+  width: 100%;
+}
+div.card-pop{
+  width: 350px;
+  height: 150px;
+  max-height: 100%;
+}
+.card-pop img{
+  width: 150px;
+  height: 150px;
+}
+ul.starList-pop{
+  padding-top: 80px;
+}
+ul.star-list-bug{
+  padding-top: 65px;
+}
+/* --------------------------------------------------------- */
+/* ASIDE ACTIVITES------------------------------------------ */
+.activite-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-acti{
+  width: 350px;
+  max-height: 100%;
+}
+.card-acti img{
+  width: 350px;
+  height: 150px;
+}
+img.image-double{
+  object-position: 50%;
+}
+.card-title-acti h3{
+  font-size: 15px;
+}
+/* -------------------------------------------------------- */
+/* -----------------------------------FOOTER---------------------------- */
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav{
+  margin: 15px;
+}
+}
+/* ---------------------------------FIN MOBILE QUERIES------------------ */
