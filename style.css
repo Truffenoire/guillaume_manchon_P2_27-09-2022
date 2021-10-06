@@ -423,6 +423,13 @@ nav{
 
 /* ----------------- */
 /* SECTION SEARCH */
+#iconSearchSvg{
+  opacity: 0;
+}
+.txtSearchSvg{
+  margin-right: 15px;
+  line-height: 45px;
+}
 input{
     border: none;
     font-weight: bold;
@@ -479,6 +486,13 @@ input{
     gap: 15px;
     margin: 30px 0;
     align-items: center;
+}
+.filtres-title{
+  display: flex;
+  line-height: 105px;
+}
+.filtres-title h3{
+  margin-right: 30px;
 }
 .filtres .btnFlex{
     all: unset;
@@ -795,8 +809,53 @@ footer a,h4{
     border-top: none;
 }
 /* -----------------------------------------------FIN NAV------------------------------ */
-/* ----------------FILTRE---------------------------------- */
+/* SECTION SEARCH------------------------------------------- */
+.txtSearchSvg{
+  opacity: 0;
+}
+#iconSearchSvg{
+  opacity: 1;
+  padding: 30px;
+}
+#iconSearchSvg svg{
+  width: 25px;
+  max-height: 100%;
 
+  margin-left: 95px;
+  max-width: 100%;
+}
+.searchVille{
+  margin: 10px 5px;
+}
+.villeSubmit{
+  width: 50px;
+  border-radius: 10px;
+}
+
+
+/* --------------------------------------------------------- */
+/* ----------------FILTRE---------------------------------- */
+.filtres{
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 80%;
+  align-content: baseline;
+}
+.filtres-title{
+  display: block;
+  margin: 0 5px;
+}
+.filtres-title h3{
+  height: 50px;
+  line-height: 100px;
+}
+.dernier-flex-item{
+  order: 2;
+}
+.btnFlex{
+  order: 1;
+}
 
 
 
