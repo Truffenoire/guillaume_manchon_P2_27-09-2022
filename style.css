@@ -787,7 +787,7 @@ footer a,h4{
 /* -----------PHONE----------- */
 
 /* NAV--------------- */
-@media (max-width: 400px){
+@media (max-width: 450px){
   /* footer{
     display: none;
   } */
@@ -856,7 +856,9 @@ footer a,h4{
 .btnFlex{
   order: 1;
 }
-
+.reponse-recherche{
+  margin-top: 20px;
+}
 
 
 
