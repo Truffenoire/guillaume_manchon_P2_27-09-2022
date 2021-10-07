@@ -366,9 +366,20 @@ html{
     color: black;
     font-family: 'raleway', sans-serif;
 }
-svg{
-      width: 15px;
+/* --------------------------SVG--------------------------- */
+.btnImg svg{
+    width: 15px;
   }
+h3 span svg{
+    width: 15px;
+}
+.searchVille svg{
+  width: 15px;
+}
+.card-body svg{
+  width: 15px;
+}
+/* ------------------------------------------------------- */
 a{
       color: black;
       text-decoration: none;
@@ -395,10 +406,10 @@ div.corpDePage{
 }
 .h1Search{
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 16px;
 }
 .pSearch{
-    font-size: 0.9em;
+    font-size: 12px;
 }
 nav{
     height: 100px;
@@ -791,21 +802,55 @@ footer a,h4{
   /* footer{
     display: none;
   } */
+  .corpDePage{
+    width: 450px;
+  }
+  .reponse-txt{
+    font-size: 18px;
+  }
+  .reponse-svg svg{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    text-align: center;
+  }
   .menuHeader{
     display: flex;
     flex-direction: column;
   }
-  .search{
-    text-align: center;
+  .h1Search{
+    width: 80%;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: justify;
+  }
+  p.pSearch{
+    font-size: 17px;
+    margin-bottom: 30px;
   }
   .menuNav{
-    justify-content: space-around;
+    justify-content: center;
+    /* gap: 25%; */
     width: 100%;
   }
-  .menuNav li a:hover{
+  .menuNav li{
+    text-align: center;
+    width: 200px;
+    margin: auto -20px;
+  }
+  .menuNav li:not(:hover){
+    border-bottom: 3px solid var(--colorGris);
+    padding-bottom: 10px;
+    text-align: center;
+    
+  }
+  .menuNav li:hover{
     color: var(--colorBleuFonce);
     padding-bottom: 10px;
     border-bottom: 3px solid var(--colorBleuFonce);
+    border-top: none;
+}
+.menuNav li a:hover{
     border-top: none;
 }
 /* -----------------------------------------------FIN NAV------------------------------ */
@@ -818,9 +863,8 @@ footer a,h4{
   padding: 30px;
 }
 #iconSearchSvg svg{
-  width: 25px;
+  width: 20px;
   max-height: 100%;
-
   margin-left: 95px;
   max-width: 100%;
 }
@@ -831,15 +875,13 @@ footer a,h4{
   width: 50px;
   border-radius: 10px;
 }
-
-
 /* --------------------------------------------------------- */
 /* ----------------FILTRE---------------------------------- */
 .filtres{
   display: flex;
   flex-wrap: wrap;
   height: 200px;
-  width: 80%;
+  width: 100%;
   align-content: baseline;
 }
 .filtres-title{
@@ -850,22 +892,19 @@ footer a,h4{
   height: 50px;
   line-height: 100px;
 }
-.dernier-flex-item{
-  order: 2;
+.btnImg svg{
+  width: 20px;
 }
-.btnFlex{
-  order: 1;
+.txt-filtre-mobil{
+  font-size: 18px;
 }
 .reponse-recherche{
   margin-top: 20px;
 }
-
-
-
-
 /* -------------------------------------------------------- */
 /* HEBERGEMENT PHONE---------------------------------------------------------- */
 .hebergements{
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -880,12 +919,16 @@ footer a,h4{
 .card{
   max-height: 100%;
   width: 350px;
+  height: 190px;
 }
 .card img{
   width: 350px;
 }
-.card-body h6, p{
-  font-size: 12px;
+.card-body h6{
+  font-size: 16px;
+}
+.card-body p{
+  font-size: 14px;
 }
 .showMore{
   margin-top: 100px;
@@ -894,6 +937,7 @@ footer a,h4{
 /* ASIDE POPULAIRE-------------------------------- */
 .populaire{
   order: 1;
+  border-radius: 0;
   width: 100%;
 }
 div.card-pop{
@@ -906,10 +950,13 @@ div.card-pop{
   height: 150px;
 }
 ul.starList-pop{
-  padding-top: 80px;
+  padding-top: 40px;
 }
 ul.star-list-bug{
-  padding-top: 65px;
+  padding-top: 35px;
+}
+.titlePop span svg{
+  width: 25px;
 }
 /* --------------------------------------------------------- */
 /* ASIDE ACTIVITES------------------------------------------ */
@@ -943,3 +990,195 @@ img.image-double{
 }
 }
 /* ---------------------------------FIN MOBILE QUERIES------------------ */
+
+/* --------------------------MEDIA QUERIES TABLETTE--------------------- */
+@media (max-width: 770px){
+
+  .corpDePage{
+    width: 100%px;
+  }
+  .reponse-txt{
+    font-size: 18px;
+  }
+  .reponse-svg svg{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    text-align: center;
+  }
+  .menuHeader{
+    display: flex;
+    flex-direction: column;
+  }
+  .h1Search{
+    width: 80%;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: justify;
+  }
+  p.pSearch{
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .menuNav{
+    justify-content: center;
+    /* gap: 25%; */
+    width: 100%;
+  }
+  .menuNav li{
+    text-align: center;
+    width: 200px;
+    margin: auto -20px;
+  }
+  .menuNav li:not(:hover){
+    border-bottom: 3px solid var(--colorGris);
+    padding-bottom: 10px;
+    text-align: center;
+    
+  }
+  .menuNav li:hover{
+    color: var(--colorBleuFonce);
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--colorBleuFonce);
+    border-top: none;
+}
+.menuNav li a:hover{
+    border-top: none;
+}
+/* -----------------------------------------------FIN NAV------------------------------ */
+/* SECTION SEARCH------------------------------------------- */
+.txtSearchSvg{
+  opacity: 0;
+}
+#iconSearchSvg{
+  opacity: 1;
+  padding: 30px;
+}
+#iconSearchSvg svg{
+  width: 20px;
+  max-height: 100%;
+  margin-left: 95px;
+  max-width: 100%;
+}
+.searchVille{
+  margin: 10px 5px;
+}
+.villeSubmit{
+  width: 50px;
+  border-radius: 10px;
+}
+/* --------------------------------------------------------- */
+/* ----------------FILTRE---------------------------------- */
+.filtres{
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 100%;
+  align-content: baseline;
+}
+.filtres-title{
+  display: block;
+  margin: 0 5px;
+}
+.filtres-title h3{
+  height: 50px;
+  line-height: 100px;
+}
+.btnImg svg{
+  width: 20px;
+}
+.txt-filtre-mobil{
+  font-size: 18px;
+}
+.reponse-recherche{
+  margin-top: 20px;
+}
+/* -------------------------------------------------------- */
+/* HEBERGEMENT PHONE---------------------------------------------------------- */
+.hebergements{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: max-content; */
+}
+/* ASIDE MARSEILLE---------------------------------- */
+.marseille{
+  background-color: white;
+  width: 100%;
+  order: 2;
+}
+.card{
+  max-height: 100%;
+  width: 450px;
+  height: 280px;
+}
+.card img{
+  width: 450px;
+ height: 190px;
+}
+.card-body h6{
+  font-size: 16px;
+}
+.card-body p{
+  font-size: 14px;
+}
+.showMore{
+  margin-top: 180px;
+  font-weight: bold;
+}
+/* ASIDE POPULAIRE-------------------------------- */
+.populaire{
+  order: 1;
+  border-radius: 0;
+  width: 100%;
+}
+div.card-pop{
+  width: 450px;
+  height: 150px;
+  max-height: 100%;
+}
+.card-pop img{
+  width: 250px;
+  height: 150px;
+}
+ul.starList-pop{
+  padding-top: 40px;
+}
+ul.star-list-bug{
+  padding-top: 35px;
+}
+.titlePop span svg{
+  width: 25px;
+}
+/* --------------------------------------------------------- */
+/* ASIDE ACTIVITES------------------------------------------ */
+.activite-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-acti{
+  width: 450px;
+  max-height: 100%;
+}
+.card-acti img{
+  width: 450px;
+  height: 150px;
+}
+img.image-double{
+  object-position: 50%;
+}
+.card-title-acti h3{
+  font-size: 15px;
+}
+/* -------------------------------------------------------- */
+/* -----------------------------------FOOTER---------------------------- */
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav{
+  margin: 15px;
+}
+}
