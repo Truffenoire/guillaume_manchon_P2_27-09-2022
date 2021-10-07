@@ -992,7 +992,7 @@ img.image-double{
 /* ---------------------------------FIN MOBILE QUERIES------------------ */
 
 /* --------------------------MEDIA QUERIES TABLETTE--------------------- */
-@media (max-width: 770px){
+@media (min-width: 451px) and (max-width: 770px){
 
   .corpDePage{
     width: 100%px;
