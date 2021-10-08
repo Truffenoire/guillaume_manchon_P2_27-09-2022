@@ -803,9 +803,9 @@ footer a,h4{
 
 /* NAV--------------- */
 @media (max-width: 450px){
-  /* footer{
-    display: none;
-  } */
+  body {
+    overflow-x: hidden; 
+ }
   .corpDePage{
     width: 450px;
   }
@@ -997,9 +997,11 @@ img.image-double{
 
 /* --------------------------MEDIA QUERIES TABLETTE--------------------- */
 @media (min-width: 451px) and (max-width: 770px){
-
+  body {
+    overflow-x: hidden; 
+ }
   .corpDePage{
-    width: 100%px;
+    width: max-content;
   }
   .reponse-txt{
     font-size: 18px;
