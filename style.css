@@ -419,17 +419,23 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.menuNav li{
+  width: 115px;
+  text-align: center;
+}
 .menuNav{
     display: flex;
     gap: 40px;
     justify-content: space-between;
 }
-.menuNav li a{
-    padding-top: 39px;
+.menuNav li{
+    padding: 36px 0;
+    overflow: hidden;
 }
-.menuNav li a:hover{
+.menuNav li:hover{
     color: var(--colorBleuFonce);
     border-top: 2px solid var(--colorBleuFonce);
+    transform:  scale(1);
 }
 
 /* ----------------- */
@@ -640,7 +646,7 @@ border-radius: 1000px;
 .card-pop .card-image img{
   object-fit: cover;
 }
-div.card-pop{
+.card-pop a{
   display: flex;
   height: 120px;
   width: 250px;
@@ -672,9 +678,7 @@ div.card-pop{
 }
 .card-pop .card-stars {
 /* -------------------------------------------ETOILE A METTRE EN FLEX END ?????---------------------------- */
-  /* align-items: flex-end; */
   flex-grow: 1;                             
-  /* padding-top: 25%; */
 }
 /* ---------------------------------------------------------------------------------------- */
 .titlePop{
@@ -689,16 +693,17 @@ div.card-pop{
   gap: 1%;
   margin-bottom: 30px;
 }
-.starList{
+ul.starList{
   display: flex;
-  align-items: flex-end;
 }
+
 /* -----------------------ACTIVITES------------------------ */
 #activite{
   font-size: 15px;
   font-weight: 900;
   margin: 45px 0 0px 0;
 }
+
 .activite-flex{
   display: flex;
   gap: 4%;
@@ -714,11 +719,14 @@ div.card-pop{
   border-top-right-radius: var(--radius);
   /* box-shadow: 0px 0px 3px rgb(170, 167, 167); */
 }
-
+section.titleActi{
+  padding: 0 15px;
+}
 img.img-seule{
   max-height: 100%;
   height: 300px;
   max-width: 100%;
+  box-shadow: 0px 0px 6px rgb(194, 194, 194);
   overflow: hidden;
 }
 /* FIN PLACEMENT FLEX */
@@ -792,6 +800,28 @@ footer{
 footer a,h4{
   padding: 10px;
 }
+.reponse-svg svg{
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  text-align: center;
+}
+.reponse-txt{
+  font-size: 18px;
+  line-height: 30px;
+}
+section.search{
+  padding: 0 15px;
+}
+section.reponse-recherche{
+  padding: 0 15px;
+}
+section.filtres-title{
+  padding: 0 15px;
+}
+.reponse-txt{
+  font-size: 18px;
+}
 
 /* --------------------------------------------------------MEDIA QUERIES-------------------------------------------------------- */
 @media (min-width: 771px){
@@ -809,9 +839,10 @@ footer a,h4{
   .corpDePage{
     width: 450px;
   }
-  .reponse-txt{
+  /* .reponse-txt{
     font-size: 18px;
-  }
+    line-height: 30px;
+  } */
   .reponse-svg svg{
     width: 30px;
     height: 30px;
@@ -821,6 +852,7 @@ footer a,h4{
   .menuHeader{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .h1Search{
     width: 80%;
@@ -944,7 +976,7 @@ footer a,h4{
   border-radius: 0;
   width: 100%;
 }
-div.card-pop{
+div.card-pop a{
   width: 350px;
   height: 150px;
   max-height: 100%;
@@ -996,25 +1028,22 @@ img.image-double{
 /* ---------------------------------FIN MOBILE QUERIES------------------ */
 
 /* --------------------------MEDIA QUERIES TABLETTE--------------------- */
-@media (min-width: 451px) and (max-width: 770px){
+@media (min-width: 451px) and (max-width: 810px){
   body {
     overflow-x: hidden; 
  }
   .corpDePage{
     width: max-content;
   }
+ 
   .reponse-txt{
     font-size: 18px;
   }
-  .reponse-svg svg{
-    width: 30px;
-    height: 30px;
-    padding: 7px;
-    text-align: center;
-  }
+
   .menuHeader{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .h1Search{
     width: 80%;
@@ -1139,7 +1168,7 @@ img.image-double{
   border-radius: 0;
   width: 100%;
 }
-div.card-pop{
+div.card-pop a{
   width: 450px;
   height: 150px;
   max-height: 100%;
@@ -1163,6 +1192,12 @@ ul.star-list-bug{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.groupe > .card-acti:nth-child(2) .card-image-acti{
+  height: 150px;
+}
+.groupe2 > img.image-double{
+  height: 150px;
 }
 .card-acti{
   width: 450px;
