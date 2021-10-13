@@ -673,7 +673,7 @@ border-radius: 1000px;
   width: 100px;
   height: 120px;
 }
-.card-pop:hover{
+.card-pop a:hover{
   transform: scale(1.05);
 }
 .card-pop .card-stars {
@@ -922,7 +922,7 @@ section.filtres-title{
 }
 .filtres-title{
   display: block;
-  margin: 0 5px;
+  margin-left: 5px;
 }
 .filtres-title h3{
   height: 50px;
@@ -1014,6 +1014,21 @@ img.image-double{
 }
 .card-title-acti h3{
   font-size: 15px;
+}
+.groupe > .card-acti:nth-child(2) .card-image-acti{
+  height: 150px;
+}
+.groupe2>.card-acti:nth-child(1) .card-image-acti{
+  height: 150px;
+  overflow: hidden;
+  object-position: 50% 70%;
+}
+.groupe2>.card-acti:nth-child(2) .card-image-acti{
+  height: 150px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
 }
 /* -------------------------------------------------------- */
 /* -----------------------------------FOOTER---------------------------- */
@@ -1113,7 +1128,7 @@ img.image-double{
 }
 .filtres-title{
   display: block;
-  margin: 0 5px;
+  margin-left: 5px;
 }
 .filtres-title h3{
   height: 50px;
@@ -1212,6 +1227,18 @@ img.image-double{
 }
 .card-title-acti h3{
   font-size: 15px;
+}
+.groupe2>.card-acti:nth-child(1) .card-image-acti{
+  height: 150px;
+  overflow: hidden;
+  object-position: 50% 70%;
+}
+.groupe2>.card-acti:nth-child(2) .card-image-acti{
+  height: 150px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
 }
 /* -------------------------------------------------------- */
 /* -----------------------------------FOOTER---------------------------- */
