@@ -811,7 +811,10 @@ footer a,h4{
   line-height: 30px;
 }
 section.search{
-  padding: 0 15px;
+  padding-left: 5px;
+}
+h1.h1Search{
+  width: 310px;
 }
 section.reponse-recherche{
   padding: 0 15px;
@@ -819,9 +822,9 @@ section.reponse-recherche{
 section.filtres-title{
   padding: 0 10px;
 }
-.reponse-txt{
+/* .reponse-txt{
   font-size: 18px;
-}
+} */
 
 /* --------------------------------------------------------MEDIA QUERIES-------------------------------------------------------- */
 @media (min-width: 771px){
@@ -840,7 +843,7 @@ section.filtres-title{
     width: 450px;
   }
   .reponse-txt{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .reponse-svg svg{
