@@ -817,7 +817,7 @@ section.reponse-recherche{
   padding: 0 15px;
 }
 section.filtres-title{
-  padding: 0 15px;
+  padding: 0 10px;
 }
 .reponse-txt{
   font-size: 18px;
@@ -839,10 +839,10 @@ section.filtres-title{
   .corpDePage{
     width: 450px;
   }
-  /* .reponse-txt{
+  .reponse-txt{
     font-size: 18px;
     line-height: 30px;
-  } */
+  }
   .reponse-svg svg{
     width: 30px;
     height: 30px;
@@ -922,7 +922,8 @@ section.filtres-title{
 }
 .filtres-title{
   display: block;
-  margin-left: 5px;
+  /* padding-left: 0 0 0 10px; */
+  /* margin-left: 5px; */
 }
 .filtres-title h3{
   height: 50px;
