@@ -420,6 +420,7 @@ nav{
     align-items: center;
 }
 .menuNav li{
+  border-top: 2px solid transparent;
   width: 115px;
   text-align: center;
 }
