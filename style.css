@@ -676,11 +676,12 @@ border-radius: 1000px;
 .card-pop a:hover{
   transform: scale(1.05);
 }
-.card-pop .card-stars {
-/* -------------------------------------------ETOILE A METTRE EN FLEX END ?????---------------------------- */
-  flex-grow: 1;                             
+ul.starList-pop{
+  padding-top: 45px;
 }
-/* ---------------------------------------------------------------------------------------- */
+ul.starList-pop.star-list-bug{
+  padding-top: 30px;
+}
 .titlePop{
   display: flex;
   justify-content: space-between;
