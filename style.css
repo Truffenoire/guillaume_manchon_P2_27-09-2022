@@ -436,7 +436,6 @@ nav{
 .menuNav li:hover{
     color: var(--colorBleuFonce);
     border-top: 2px solid var(--colorBleuFonce);
-    transform:  scale(1);
 }
 
 /* ----------------- */
@@ -444,6 +443,7 @@ nav{
 #iconSearchSvg{
   opacity: 0;
 }
+
 .txtSearchSvg{
   margin-right: 15px;
   line-height: 45px;
@@ -453,6 +453,10 @@ input{
     font-weight: bold;
     width: 200px;
     padding-left: 20px;
+}
+input::placeholder{
+  color: black;
+  opacity: 1;
 }
 .h1Search{
     font-size: 18px;
@@ -897,24 +901,30 @@ section.filtres-title{
 /* -----------------------------------------------FIN NAV------------------------------ */
 /* SECTION SEARCH------------------------------------------- */
 .txtSearchSvg{
+  display: none;
   opacity: 0;
 }
 #iconSearchSvg{
   opacity: 1;
-  padding: 30px;
+  /* padding: 30px; */
 }
 #iconSearchSvg svg{
-  width: 20px;
+  width: 18px;
   max-height: 100%;
-  margin-left: 95px;
-  max-width: 100%;
 }
 .searchVille{
-  margin: 10px 5px;
+  height: 55px;
+  width: 320px;
+  margin: 10px;
+}
+label.findSvg{
+  height: 55px;
+  width: 60px;
 }
 .villeSubmit{
-  width: 50px;
-  border-radius: 10px;
+  width: 60px;
+  height: 55px;
+  border-radius: 15px;
 }
 /* --------------------------------------------------------- */
 /* ----------------FILTRE---------------------------------- */
@@ -1104,7 +1114,7 @@ img.image-double{
 /* -----------------------------------------------FIN NAV------------------------------ */
 /* SECTION SEARCH------------------------------------------- */
 .txtSearchSvg{
-  opacity: 0;
+  display: none;
 }
 #iconSearchSvg{
   opacity: 1;
@@ -1113,8 +1123,6 @@ img.image-double{
 #iconSearchSvg svg{
   width: 20px;
   max-height: 100%;
-  margin-left: 95px;
-  max-width: 100%;
 }
 .searchVille{
   margin: 10px 5px;
@@ -1166,11 +1174,11 @@ img.image-double{
 }
 .card{
   max-height: 100%;
-  width: 450px;
+  width: 70%;
   height: 280px;
 }
 .card img{
-  width: 450px;
+  width: 100%;
  height: 190px;
 }
 .card-body h6{
@@ -1190,16 +1198,25 @@ img.image-double{
   width: 100%;
 }
 div.card-pop a{
-  width: 450px;
+  width: 100%;
   height: 150px;
   max-height: 100%;
 }
+.card-pop .card-body{
+  width: 100%;
+}
+div.card-pop{
+  width: 70%;
+}
 .card-pop img{
-  width: 250px;
+  width: 100%;
   height: 150px;
 }
+.card-image{
+  width: 100%;
+}
 ul.starList-pop{
-  padding-top: 40px;
+  padding-top: 49px;
 }
 ul.star-list-bug{
   padding-top: 35px;
@@ -1221,14 +1238,24 @@ ul.star-list-bug{
   height: 150px;
 }
 .card-acti{
-  width: 450px;
+  width: 70%;
   max-height: 100%;
 }
+div.groupe{
+  width: 70%;
+}
+.card-image-acti.card-groupe{
+  width: 100%;
+}
+div.groupe2{
+  width: 70%;
+}
 .card-acti img{
-  width: 450px;
+  width: 100%;
   height: 150px;
 }
 img.image-double{
+  width: 100%;
   object-position: 50%;
 }
 .card-title-acti h3{
@@ -1245,6 +1272,9 @@ img.image-double{
   max-width: 100%;
   max-height: 100%;
   margin-top: 20px;
+}
+.card-acti-groupe{
+  width: 100%;
 }
 /* -------------------------------------------------------- */
 /* -----------------------------------FOOTER---------------------------- */
